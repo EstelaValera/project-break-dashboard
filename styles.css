@@ -1,0 +1,29 @@
+html {
+    background-color: aqua;
+    z-index: 1;
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 0.5fr repeat(2, 1fr) 0.5fr repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { 
+        grid-area: 4 / 4 / 6 / 6;
+        background-color: black ;
+    }
+    .div2 { 
+        grid-area: 2 / 1 / 4 / 3; 
+        background-color: red;
+    }
+    .div3 { 
+        grid-area: 6 / 1 / 8 / 3;
+        background-color: blue; 
+    }
+    .div4 { 
+        grid-area: 2 / 7 / 8 / 9;
+        background-color: blueviolet; 
+    }
+
