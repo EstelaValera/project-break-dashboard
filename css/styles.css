@@ -1,7 +1,7 @@
 html, body {
     height: 100%;
     margin: 0;
-    background-color: black;
+    background-color: #4d0128;
 }
 
 .clock {
@@ -19,7 +19,7 @@ html, body {
     padding: 30px;
     color: #f4f4f4;
     border-radius: 15px;
-    background-color: #adacac3f;
+    background-color: #adacac28;
 }
 
 #time span {
