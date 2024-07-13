@@ -1,0 +1,33 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: black;
+}
+
+.clock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    font-size: 80px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    text-align: center;
+    padding: 30px;
+    color: #f4f4f4;
+    border-radius: 15px;
+    background-color: #adacac3f;
+}
+
+#time span {
+    margin: 0 5px;
+}
+
+#date {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
