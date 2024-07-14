@@ -1,0 +1,49 @@
+.container {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    padding: 10px 10px 70px 10px;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    color: #f4f4f4;
+    border-radius: 15px;
+    background-color: #adacacb8;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+.input-container {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+#name-input {
+    margin: 5px;
+    text-align: center;
+    font-size: 12px;
+    border: 2px solid #4d0128;
+}
+
+#url-input {
+    margin: 5px;
+    text-align: center;
+    font-size: 12px;
+    border: 2px solid #4d0128;
+}
+
+.link-button {
+    font-size: 15px;
+    margin: 5px;
+    background-color: #4d0128;
+    color: #f4f4f4;
+}
+
+.links {
+    background-color: red;
+}
