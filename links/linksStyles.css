@@ -1,3 +1,5 @@
+
+
 .container {
     justify-content: center;
     display: flex;
@@ -23,18 +25,22 @@ h2 {
     display: flex;
 }
 
-#name-input {
+#title-input {
     margin: 5px;
     text-align: center;
-    font-size: 12px;
+    font-size: 13px;
+    background-color: #f4f4f4;
     border: 2px solid #4d0128;
+    border-radius: 15px;
 }
 
 #url-input {
     margin: 5px;
     text-align: center;
-    font-size: 12px;
+    font-size: 13px;
+    background-color: #f4f4f4;
     border: 2px solid #4d0128;
+    border-radius: 15px;
 }
 
 .link-button {
@@ -42,8 +48,41 @@ h2 {
     margin: 5px;
     background-color: #4d0128;
     color: #f4f4f4;
+    transition: all 0.5s;
+    cursor: pointer;
+    border-radius: 15px;
+    border: #f4f4f4 2px solid;
+}
+
+.link-button:hover{
+    background-color: #f4f4f4;
+    transition: all 0.5s;
+    color: #4d0128;
+    border: #4d0128 2px solid;
 }
 
 .links {
-    background-color: red;
+    background-color: #f4f4f4;
+    color: #4d0128;
+    border-radius: 15px;
+    border: #f4f4f4 3px solid;
+    padding: 4px;
+    margin: 5px;
+    list-style-type: none;
+}
+
+.links li {
+    margin-bottom: 10px;
+}
+
+.delete-button {
+    background-color: #f4f4f4;
+    color: #4d0128;
+    border-radius: 50px;
+    border: 1px solid #f4f4f4;
+    cursor: pointer;
+}
+
+.delete-button:hover{
+    border: #4d0128 1px solid;
 }

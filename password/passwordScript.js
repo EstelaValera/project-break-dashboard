@@ -1,22 +1,3 @@
-/*Generador de contraseñas seguras:
-
-### ¿Como funciona?
-Crea una página que tendrá lo siguiente:
-- Tendrá entre 12 caracteres como mínimo y 50 de máximo. Se podrá elegir el número de caracteres
-- Se compondrá de mayúsculas, minúsculas, números y símbolos. Mínimo una de cada.
-- Tendremos un input dónde meteremos la longitud de la contraseña y un botón para que nos de el resultado.
-- Dale estilo con CSS'¡
-### ¿Qué usaremos?
-- `Math.random()` Para generar aleatoriedad
-- Mayúsculas: "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-- Minúsculas: "abcdefghijklmnopqrstuvwxyz"
-- Números: "0123456789"
-- Símbolos "!@#$%^&*()-_=+"
-
-### PISTAS Y CONSEJOS
-- Guarda cada uno de los datos (mayúsculas, minúsculas, símbolos y núemeros) en una variable para poder recorrerlos.
-- Usa bucles y condicionales
-*/
 
 const pass = document.getElementById('pass');
 const form = document.getElementById('passForm')
@@ -28,7 +9,7 @@ form.addEventListener('submit', function(event) {
 
     console.log('Valor del input:', inputValue);
     const password = generarContraseña(inputValue);
-    pass.textContent = password;  // Mostrar la contraseña generada en la página
+    pass.textContent = password; 
 });
 
 function generarContraseña(length) {

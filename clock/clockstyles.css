@@ -1,7 +1,12 @@
+body {
+    background-image: url(img/nikhil-kumar-JdPHvI7VF0o-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 html, body {
     height: 100%;
     margin: 0;
-    background-color: #4d0128;
 }
 
 .clock {
@@ -19,7 +24,7 @@ html, body {
     padding: 30px;
     color: #f4f4f4;
     border-radius: 15px;
-    background-color: #adacace0;
+    background-color: #4d01289c;
 }
 
 #time span {
@@ -29,5 +34,9 @@ html, body {
 #date {
     font-size: 1.5rem;
     margin-bottom: 10px;
+}
+
+#message {
+    font-size: 13px;
 }
 

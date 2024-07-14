@@ -1,6 +1,9 @@
 function updateClock() {
     let now = new Date();
-    let date = now.toLocaleDateString('es-ES', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+    let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    let date = now.toLocaleDateString('es-ES', options);
+    date = date.charAt(0).toUpperCase() + date.slice(1);
+    
     let hour = now.getHours();
     let minute = now.getMinutes();
     let second = now.getSeconds();
@@ -13,7 +16,29 @@ function updateClock() {
     document.getElementById('hour').innerText = hour;
     document.getElementById('minute').innerText = minute;
     document.getElementById('second').innerText = second;
+
+    let message = '';
+    if (hour >= 0 && hour < 7) {
+        message = "¡Buenas noches! Que descanses 🤍";
+    } else if (hour >= 7 && hour < 12) {
+        message = "¡Buenos días! Un día menos para la jubilación 💪🏻";
+    } else if (hour >= 12 && hour < 14) {
+        message = "Ánimo, pronto pararás a comer.";
+    } else if (hour >= 14 && hour < 16) {
+        message = "¡Hora de comer!";
+    } else if (hour >= 16 && hour < 18) {
+        message = "Venga, que ya no te queda nada";
+    } else if (hour >= 18 && hour < 22) {
+        message = "Te mereces un decanso y tiempo para ti 🤞🏻";
+    } else {
+        message = "Prepárate para el mejor momento del día.. ¡A DORMIR! 😴";
+    }
+
+    document.getElementById('message').innerText = message;
+
 }
+
 
 setInterval(updateClock, 1000);
 updateClock();
+
