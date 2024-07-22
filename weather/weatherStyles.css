@@ -1,0 +1,118 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+#weather-container {
+    background-color: #4d01289c;
+    color: #f4f4f4;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 450px; 
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px; 
+    box-sizing: border-box; 
+    position: absolute;
+
+}
+
+.cabecera {
+    padding: 2px;
+}
+
+.local {
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #f4f4f4;
+    font-size: 25px;
+}
+
+h1 {
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #f4f4f4;
+    margin: 1px;
+    font-weight: 100;
+}
+
+h2 {
+    font-size: 19px;
+    text-align: center;
+    color: #f4f4f4;
+    font-weight: 200;
+}
+
+h3 {
+    font-size: 16px;
+    text-align: center;
+    color: #f4f4f4;
+    font-weight: 200;
+}
+
+p {
+    margin: 1px;
+    font-weight: 300;
+}
+
+#temperature {
+    font-size: 20px;
+}
+
+#current-weather {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    font-size: 13px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#hourly-forecast {
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: stretch;
+    margin: 10px 0;
+}
+
+#forecast-container {
+    display: flex;
+    overflow-x: scroll;
+    margin: 10px;
+}
+
+.forecast-hour {
+    margin-right: 1px;
+    margin-top: 1px;
+    text-align: center;
+    border: 0.5px solid #f4f4f45d;
+    border-radius: 5px;
+    margin: 1px 2px 3px 2px;
+}
+
+.icon-hour {
+    width: 30x;
+    height: 30px;
+}
+
+#icon {
+    width: 40x;
+    height: 40px;
+}
+

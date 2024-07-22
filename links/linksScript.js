@@ -20,14 +20,10 @@ document.addEventListener('DOMContentLoaded', function() {
             url: url
         };
 
-
-        // Guardar en localStorage
         saveLink(link);
 
-         // Añadir el enlace a la lista
         addLinkToList(link);
 
-        // Limpiar los campos de input
         titleInput.value = '';
         urlInput.value = '';
 
@@ -67,7 +63,6 @@ document.addEventListener('DOMContentLoaded', function() {
         linksList.appendChild(listItem);
     }
 
-     // Función para eliminar un enlace
     function deleteLink(linkToDelete) {
         let links = JSON.parse(localStorage.getItem('links')) || [];
         links = links.filter(function(link) {

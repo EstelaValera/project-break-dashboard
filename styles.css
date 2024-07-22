@@ -1,29 +1,79 @@
-html {
-    background-color: aqua;
-    z-index: 1;
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    animation: changeBackground 75s infinite;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-.parent {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr) 0.5fr repeat(2, 1fr) 0.5fr repeat(2, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    }
-    
-    .div1 { 
-        grid-area: 4 / 4 / 6 / 6;
-        background-color: black ;
-    }
-    .div2 { 
-        grid-area: 2 / 1 / 4 / 3; 
-        background-color: red;
-    }
-    .div3 { 
-        grid-area: 6 / 1 / 8 / 3;
-        background-color: blue; 
-    }
-    .div4 { 
-        grid-area: 2 / 7 / 8 / 9;
-        background-color: blueviolet; 
-    }
 
+@keyframes changeBackground {
+    0% { background-image: url(img/1.jpg); }
+    19.5% { background-image: url(img/1.jpg); }
+    20% { background-image: url(img/2.jpg); }
+    39.5% { background-image: url(img/2.jpg); }
+    40% { background-image: url(img/3.jpg); }
+    59.5% { background-image: url(img/3.jpg); }
+    60% { background-image: url(img/4.jpg); }
+    79.5% { background-image: url(img/4.jpg); }
+    80% { background-image: url(img/5.jpg); }
+    99.5% { background-image: url(img/5.jpg); }
+    100% { background-image: url(img/1.jpg); }
+}
+
+iframe {
+border: none;
+}
+
+.clock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 8%;
+    left: 7%;
+}
+
+.password {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 7%;   
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 22%;
+    left: 40%; 
+}
+
+.links {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 15%;
+    left: 71%;
+}
+
+.enlaces {
+    text-decoration: none;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: #4d01289c;
+    margin: 10px;
+    height: 50px;
+    width: 150px;
+    border-radius: 15px;
+}

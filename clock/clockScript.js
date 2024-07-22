@@ -20,15 +20,15 @@ function updateClock() {
     let message = '';
     if (hour >= 0 && hour < 7) {
         message = "¡Buenas noches! Que descanses 🤍";
-    } else if (hour >= 7 && hour < 12) {
+    } else if (hour >= 7 && hour < 11) {
         message = "¡Buenos días! Un día menos para la jubilación 💪🏻";
-    } else if (hour >= 12 && hour < 14) {
+    } else if (hour >= 11 && hour < 13) {
         message = "Ánimo, pronto pararás a comer.";
-    } else if (hour >= 14 && hour < 16) {
+    } else if (hour >= 13 && hour < 15) {
         message = "¡Hora de comer!";
-    } else if (hour >= 16 && hour < 18) {
-        message = "Venga, que ya no te queda nada";
-    } else if (hour >= 18 && hour < 22) {
+    } else if (hour >= 15 && hour < 17) {
+        message = "Venga, último empujón";
+    } else if (hour >= 17 && hour < 22) {
         message = "Te mereces un decanso y tiempo para ti 🤞🏻";
     } else {
         message = "Prepárate para el mejor momento del día.. ¡A DORMIR! 😴";

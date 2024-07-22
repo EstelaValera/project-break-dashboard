@@ -1,12 +1,11 @@
-body {
-    background-image: url(img/nikhil-kumar-JdPHvI7VF0o-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 html, body {
     height: 100%;
     margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
 }
 
 .clock {
@@ -15,16 +14,15 @@ html, body {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 35%;
-    left: 40%;
     font-size: 80px;
-    font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;
     text-align: center;
     padding: 30px;
     color: #f4f4f4;
     border-radius: 15px;
     background-color: #4d01289c;
+    font-weight: 200;
+    height: 200px;
+    width: 410px;
 }
 
 #time span {
@@ -38,5 +36,6 @@ html, body {
 
 #message {
     font-size: 13px;
+    font-weight: 300;
 }
 
