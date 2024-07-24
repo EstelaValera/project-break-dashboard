@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     height: 100vh;
@@ -32,8 +33,8 @@ border: none;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 8%;
-    left: 7%;
+    top: 4.5%;
+    left: 3%;
 }
 
 .password {
@@ -43,7 +44,7 @@ border: none;
     align-items: center;
     position: absolute;
     top: 50%;
-    left: 7%;   
+    left: 3%;   
 }
 
 .weather {
@@ -52,8 +53,8 @@ border: none;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 22%;
-    left: 40%; 
+    top: 15.5%;
+    left: 38%; 
 }
 
 .links {
@@ -62,7 +63,7 @@ border: none;
     align-items: center;
     position: absolute;
     top: 15%;
-    left: 71%;
+    left: 70%;
 }
 
 .enlaces {
@@ -73,7 +74,8 @@ border: none;
     align-items: center;
     background-color: #4d01289c;
     margin: 10px;
-    height: 50px;
-    width: 150px;
+    height: 35px;
+    width: 120px;
     border-radius: 15px;
 }
+

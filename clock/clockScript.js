@@ -20,9 +20,9 @@ function updateClock() {
     let message = '';
     if (hour >= 0 && hour < 7) {
         message = "¡Buenas noches! Que descanses 🤍";
-    } else if (hour >= 7 && hour < 11) {
+    } else if (hour >= 7 && hour < 12) {
         message = "¡Buenos días! Un día menos para la jubilación 💪🏻";
-    } else if (hour >= 11 && hour < 13) {
+    } else if (hour >= 12 && hour < 13) {
         message = "Ánimo, pronto pararás a comer.";
     } else if (hour >= 13 && hour < 15) {
         message = "¡Hora de comer!";
