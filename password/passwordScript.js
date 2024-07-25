@@ -32,7 +32,5 @@ function generarContraseña(length) {
         return password;
     }
 
-
-    
 }
 
